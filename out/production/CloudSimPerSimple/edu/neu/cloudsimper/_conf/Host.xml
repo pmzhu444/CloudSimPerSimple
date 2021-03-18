@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hosts>
+	<Host name="HPDL580">
+		<Plugins>
+			<PowerModel name="discrete">
+				<Attribute name="exp">-1</Attribute>
+				<Attribute name="base">-1</Attribute>
+				<Attribute name="max">-1</Attribute>
+				<Attribute name="idle">-1</Attribute>
+				<Attribute name="powerData">1200,1225,1250,1275,1300,1325,1350,1375,1400,1425,1450,1475,1500</Attribute>
+			</PowerModel>
+		</Plugins>
+		<Attribute name="mips">8000</Attribute>
+		<Attribute name="cpuNumber">8</Attribute>
+	</Host>
+	<Host name="IBMX3850">
+		<Plugins>
+			<PowerModel name="exponent">
+				<Attribute name="exp">2</Attribute>
+				<Attribute name="base">-1</Attribute>
+				<Attribute name="max">-1</Attribute>
+				<Attribute name="idle">760</Attribute>
+			</PowerModel>
+		</Plugins>
+		<Attribute name="mips">7400</Attribute>
+		<Attribute name="cpuNumber">4</Attribute>
+	</Host>
+	<Host name="HPXeon3104">
+		<Plugins>
+			<PowerModel name="linear">
+				<Attribute name="exp">-1</Attribute>
+				<Attribute name="base">-1</Attribute>
+				<Attribute name="max">1125</Attribute>
+				<Attribute name="idle">220</Attribute>
+			</PowerModel>
+		</Plugins>
+		<Attribute name="mips">6800</Attribute>
+		<Attribute name="cpuNumber">6</Attribute>
+	</Host>
+	<Host name="IBMP570">
+		<Plugins>
+			<PowerModel name="logarithm">
+				<Attribute name="exp">-1</Attribute>
+				<Attribute name="base">2</Attribute>
+				<Attribute name="max">-1</Attribute>
+				<Attribute name="idle">700</Attribute>
+			</PowerModel>
+		</Plugins>
+		<Attribute name="mips">16800</Attribute>
+		<Attribute name="cpuNumber">4</Attribute>
+	</Host>
+	<Host name="HUAWEI2288H">
+		<Plugins>
+			<PowerModel name="logarithm">
+				<Attribute name="exp">-1</Attribute>
+				<Attribute name="base">2</Attribute>
+				<Attribute name="max">-1</Attribute>
+				<Attribute name="idle">550</Attribute>
+			</PowerModel>
+		</Plugins>
+		<Attribute name="mips">12000</Attribute>
+		<Attribute name="cpuNumber">8</Attribute>
+	</Host>
+	<Host name="DELLT440">
+		<Plugins>
+			<PowerModel name="logarithm">
+				<Attribute name="exp">-1</Attribute>
+				<Attribute name="base">2</Attribute>
+				<Attribute name="max">-1</Attribute>
+				<Attribute name="idle">495</Attribute>
+			</PowerModel>
+		</Plugins>
+		<Attribute name="mips">8800</Attribute>
+		<Attribute name="cpuNumber">10</Attribute>
+	</Host>
+	<Host name="DELLR720">
+		<Plugins>
+			<PowerModel name="logarithm">
+				<Attribute name="exp">-1</Attribute>
+				<Attribute name="base">2</Attribute>
+				<Attribute name="max">-1</Attribute>
+				<Attribute name="idle">460</Attribute>
+			</PowerModel>
+		</Plugins>
+		<Attribute name="mips">7200</Attribute>
+		<Attribute name="cpuNumber">4</Attribute>
+	</Host>
+</Hosts>
