@@ -35,8 +35,10 @@
 		<Attribute name="windFile_DC_SH">edu.neu.cloudsimper.energy.EnergyGeneratorFileWind</Attribute>
 		<Attribute name="solarFile_DC_LA">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
 		<Attribute name="windFile_DC_LA">edu.neu.cloudsimper.energy.EnergyGeneratorFileWind</Attribute>
-		<Attribute name="solarTheory_DC_OS">edu.neu.cloudsimper.energy.EnergyGeneratorTheorySolar</Attribute>
-		<Attribute name="windTheory_DC_OS">edu.neu.cloudsimper.energy.EnergyGeneratorTheoryWind</Attribute>
+		<Attribute name="solarFile_DC_OS">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
+		<Attribute name="windFile_DC_OS">edu.neu.cloudsimper.energy.EnergyGeneratorFileWind</Attribute>
+<!--		<Attribute name="solarTheory_DC_OS">edu.neu.cloudsimper.energy.EnergyGeneratorTheorySolar</Attribute>-->
+<!--		<Attribute name="windTheory_DC_OS">edu.neu.cloudsimper.energy.EnergyGeneratorTheoryWind</Attribute>-->
 		<Attribute name="battery">edu.neu.cloudsimper.energy.EnergyGeneratorBatteryLinear</Attribute>
 	</Plugin>
 	<Plugin name="EnergyPrice"><!-- For Energy -->

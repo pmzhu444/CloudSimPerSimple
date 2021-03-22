@@ -94,7 +94,8 @@
 	</Energy>
 	<Energy name="solar_DC_OS">
 		<Plugins>
-			<EnergyGenerator name="solarTheory_DC_OS">
+<!--			<EnergyGenerator name="solarTheory_DC_OS">-->
+			<EnergyGenerator name="solarFile_DC_OS">
 				<Attribute name="interval">3600</Attribute>
 				<Attribute name="size">720</Attribute>
 			</EnergyGenerator>
@@ -105,7 +106,8 @@
 	</Energy>
 	<Energy name="wind_DC_OS">
 		<Plugins>
-			<EnergyGenerator name="windTheory_DC_OS">
+<!--			<EnergyGenerator name="windTheory_DC_OS">-->
+			<EnergyGenerator name="windFile_DC_OS">
 				<Attribute name="interval">3600</Attribute>
 				<Attribute name="size">720</Attribute>
 			</EnergyGenerator>
