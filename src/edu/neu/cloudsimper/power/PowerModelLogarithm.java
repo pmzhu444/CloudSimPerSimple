@@ -15,6 +15,7 @@ public class PowerModelLogarithm extends PowerModelContinue implements PowerMode
 		if (utilization == 0) {
 			return this.idle;
 		}
+		this.constant = (max - idle) / (Math.log(100) / Math.log(this.base));
 		return this.idle + this.constant * (Math.log(utilization * 100) / Math.log(this.base));
 	}
 

@@ -3,10 +3,15 @@
 	<Datacenter name="DC_CR">
 		<Attribute name="location">cairo</Attribute>
 		<Hosts>
-			<Host name="HPXeon3104" size="5" />
-			<Host name="HPDL580" size="10" />
-			<Host name="IBMP570" size="10" />
+			<Host name="HPXeon3104" size="20" />
+			<Host name="HPDL580" size="5" />
+			<Host name="IBMP570" size="15" />
 		</Hosts>
+<!--		<Hosts>-->
+<!--			<Host name="HPXeon3104" size="10" />-->
+<!--			<Host name="HPDL580" size="20" />-->
+<!--			<Host name="IBMX3850" size="20" />-->
+<!--		</Hosts>-->
 		<Energies>
 			<Energy name="solar_DC_CR" size="1"/>
 			<Energy name="wind_DC_CR" size="1"/>
@@ -34,7 +39,7 @@
 		<Attribute name="location">shanghai</Attribute>
 		<Hosts>
 			<Host name="HPXeon3104" size="20" />
-			<Host name="HPDL580" size="10" />
+			<Host name="HPDL580" size="15" />
 			<Host name="IBMP570" size="10" />
 		</Hosts>
 		<Energies>
@@ -48,9 +53,9 @@
 	<Datacenter name="DC_LA">
 		<Attribute name="location">losangeles</Attribute>
 		<Hosts>
-			<Host name="HPDL580" size="20" />
-			<Host name="DELLR720" size="10" />
-			<Host name="IBMP570" size="10" />
+			<Host name="HPDL580" size="15" />
+			<Host name="DELLR720" size="15" />
+			<Host name="IBMP570" size="15" />
 		</Hosts>
 		<Energies>
 			<Energy name="solar_DC_LA" size="1"/>
@@ -64,8 +69,8 @@
 		<Attribute name="location">oslo</Attribute>
 		<Hosts>
 			<Host name="HPDL580" size="10" />
-			<Host name="DELLT440" size="10" />
-			<Host name="HPXeon3104" size="10" />
+			<Host name="DELLT440" size="20" />
+			<Host name="HPXeon3104" size="20" />
 		</Hosts>
 		<Energies>
 			<Energy name="solar_DC_OS" size="1"/>

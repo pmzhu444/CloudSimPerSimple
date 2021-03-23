@@ -26,12 +26,19 @@ public class RequestDispatcherMaxPower extends RequestDispatcherAbstract impleme
             for (int i = 0; i < lastUsage.length; i++) {
                 lastUsage[i] = this.datacenters.get(i).getDcUsage();
             }
-            int[] Index = Arraysort(lastUsage);
+
 
 //            int[] dcRequestNum = new int[this.datacenters.size()];
 //            for (int i = 0; i < dcRequestNum.length; i++) {
 //                dcRequestNum[i] = 0;
 //            }
+            int[] Index = Arraysort(lastUsage);
+
+            for (int i = 0; i < lastUsage.length; i++) {
+                System.out.print(this.datacenters.get(Index[i]).getName() + " " + lastUsage[i] + "     ");
+            }
+            System.out.println();
+
 
             int totalRequestNum = requests.size();
             //System.out.println(totalRequestNum);
@@ -62,7 +69,7 @@ public class RequestDispatcherMaxPower extends RequestDispatcherAbstract impleme
                 }
             }
             for (int i = 0; i < this.datacenters.size(); i++) {
-                System.out.println(datacenters.get(i).getName() + " " + datacenters.get(i).getNextRequestNum());
+//                System.out.println(datacenters.get(i).getName() + " " + datacenters.get(i).getNextRequestNum());
                 for (int j = 0; j < this.datacenters.get(i).getNextRequestNum(); j++) {
                     if (!requests.isEmpty()) {
                         int last = requests.size() -1;

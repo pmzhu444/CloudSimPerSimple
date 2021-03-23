@@ -2,7 +2,7 @@ package edu.neu.cloudsimper;
 
 public class LogUnit {
 
-	private String split = "  ";
+	private String split = ",";
 
 	private long time;
 	private String dcName;

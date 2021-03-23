@@ -10,7 +10,7 @@ public class PowerModelExponent extends PowerModelContinue implements PowerModel
 
 	@Override
 	public double getPower(double utilization) {
-		//System.out.println("exp:" + (this.idle + this.constant * Math.pow(utilization * 100, this.exp)));
+		this.constant = (max - idle) / Math.pow(100, exp);
 		return this.idle + this.constant * Math.pow(utilization * 100, this.exp);
 	}
 

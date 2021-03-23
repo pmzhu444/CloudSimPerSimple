@@ -58,6 +58,9 @@ public class Host extends Component implements SimPerEntity {
 		}
 		this.usedCapacity = getCapacity() * tick - capacity;
 		this.usage = (double)usedCapacity / (getCapacity() * tick);
+//		if (this.datacenter.getName().equals("DC_OS")) {
+//			System.out.println(this.usage);
+//		}
 		unit.setFinishedRequestNum(count);
 		unit.setDcConsume(this.getPower() * tick / 1000);
 	}
