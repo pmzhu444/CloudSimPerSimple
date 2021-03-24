@@ -10,6 +10,9 @@ public class test {
 
 
     public static void main(String[] args) {
-
+        double a = 5.0, b = 3, c = 2;
+        double sum = 1 / a + 1 / b + 1 / c;
+        System.out.println(sum);
+        System.out.println((1 / a) / sum);
     }
 }

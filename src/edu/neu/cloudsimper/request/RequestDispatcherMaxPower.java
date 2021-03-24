@@ -18,20 +18,12 @@ public class RequestDispatcherMaxPower extends RequestDispatcherAbstract impleme
                 }
             }
         } else {
-//            int[] dcMaxNum = new int[this.datacenters.size()];
-//            for (int i = 0; i < this.datacenters.size(); i++) {
-//                dcMaxNum[i] = this.datacenters.get(i).getCapacity() * 600 / 1000;
-//            }
             double[] lastUsage = new double[this.datacenters.size()];
             for (int i = 0; i < lastUsage.length; i++) {
                 lastUsage[i] = this.datacenters.get(i).getDcUsage();
             }
 
 
-//            int[] dcRequestNum = new int[this.datacenters.size()];
-//            for (int i = 0; i < dcRequestNum.length; i++) {
-//                dcRequestNum[i] = 0;
-//            }
             int[] Index = Arraysort(lastUsage);
 
             for (int i = 0; i < lastUsage.length; i++) {

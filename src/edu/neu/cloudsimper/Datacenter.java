@@ -29,6 +29,7 @@ public class Datacenter extends Component implements SimPerEntity {
 	private double rePrice;
 	private int currentRequestNum;
 	private int nextRequestNum;
+	private double lastReSupply;
 
 	private Datacenter(String name, String locationName, List<Host> hosts, List<Energy> energies,
 			List<Battery> batteries) {
@@ -53,6 +54,7 @@ public class Datacenter extends Component implements SimPerEntity {
 		this.rePrice = 0;
 		this.currentRequestNum = 0;
 		this.nextRequestNum = 0;
+		this.lastReSupply = 0;
 	}
 
 	public static List<Datacenter> buildAll() {
@@ -89,6 +91,7 @@ public class Datacenter extends Component implements SimPerEntity {
 
 		this.currentRequestNum = this.queue.size();
 		this.nextRequestNum = 0;
+		this.lastReSupply = unit.getReSupply();
 	}
 
 	public boolean accept(RequestCore request) {
@@ -129,6 +132,10 @@ public class Datacenter extends Component implements SimPerEntity {
 
 	public void setNextRequestNum(int nextRequestNum) {
 		this.nextRequestNum = nextRequestNum;
+	}
+
+	public double getLastReSupply() {
+		return lastReSupply;
 	}
 
 	public double getPower() {
