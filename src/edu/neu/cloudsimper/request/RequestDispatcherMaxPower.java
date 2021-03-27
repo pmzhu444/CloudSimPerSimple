@@ -26,11 +26,6 @@ public class RequestDispatcherMaxPower extends RequestDispatcherAbstract impleme
 
             int[] Index = Arraysort(lastUsage);
 
-            for (int i = 0; i < lastUsage.length; i++) {
-                System.out.print(this.datacenters.get(Index[i]).getName() + " " + lastUsage[i] + "     ");
-            }
-            System.out.println();
-
 
             int totalRequestNum = requests.size();
             //System.out.println(totalRequestNum);
