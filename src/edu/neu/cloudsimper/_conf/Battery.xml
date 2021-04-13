@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Batteries>
 	<Battery name="unknown">
-		<Attribute name="capacity">500000</Attribute>
+		<Attribute name="capacity">0</Attribute>
 		<Attribute name="power">20</Attribute>
 		<Attribute name="dod">20</Attribute>
 		<Attribute name="lifecyle">20</Attribute>

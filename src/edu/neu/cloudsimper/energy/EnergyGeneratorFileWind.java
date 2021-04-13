@@ -10,7 +10,7 @@ public class EnergyGeneratorFileWind extends EnergyGeneratorFile implements Ener
 		double windEnergy = 0.0;
 		windSpeed = Double.parseDouble(line);
 		windEnergy = 0.5 * Math.pow(windSpeed, 3) * Math.PI * Math.pow(VANE_ENGINE_RADIUS, 2) * AIR_DENSITRY;
-		return windEnergy * 10 * 0;
+		return windEnergy * 10;
 	}
 
 }

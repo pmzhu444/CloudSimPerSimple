@@ -16,7 +16,7 @@ public class PluginFactoryCloudSimPer extends PluginFactoryAbstract implements P
     }
 
     public RequestDispatcher createRequestDispatcher() {
-        this.clazzName = MetaManager.getPluginInfor(Const.P_REQUEST_DISPATCHER).getAttribute(Const.P_ROUNDROBIN);
+        this.clazzName = MetaManager.getPluginInfor(Const.P_REQUEST_DISPATCHER).getAttribute(Const.P_MINCOST);
         try {
             this.instance = Class.forName(clazzName).newInstance();
         } catch (Exception e) {
