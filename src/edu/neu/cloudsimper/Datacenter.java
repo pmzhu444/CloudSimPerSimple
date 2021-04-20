@@ -86,7 +86,6 @@ public class Datacenter extends Component implements SimPerEntity {
 
 		if (this.queue.size() > 1000000) {
 			this.queue.clear();
-			//System.out.println(this.getName());
 		}
 
 		this.currentRequestNum = this.queue.size();
