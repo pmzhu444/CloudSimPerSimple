@@ -48,7 +48,7 @@ public class CloudSimPer {
 			unit = new LogUnit();
 			unit.setTime(clock);
 			datacenter.runTick(tick, unit);
-			System.out.println(unit);
+			//System.out.println(unit);
 			//logUnits.add(unit);
 		}
 	}

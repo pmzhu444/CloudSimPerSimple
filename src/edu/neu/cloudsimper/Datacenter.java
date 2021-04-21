@@ -70,6 +70,7 @@ public class Datacenter extends Component implements SimPerEntity {
 			host.runTick(tick, unit);
 		}
 		for (Energy energy : energies) {
+			System.out.println(energy.getDatacenter().getName());
 			energy.runTick(tick, unit);
 		}
 		for (Battery battery : batteries) {

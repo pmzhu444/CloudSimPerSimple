@@ -23,6 +23,7 @@ public class EnergyPriceFunction extends EnergyPriceAbstract implements EnergyPr
 		this.t = (CloudSimPer.getClock() % (3600 * 24) / 3600);
 		double ew = pm / p0;
 		double cost = pm * (ew + Math.exp(1) * t);
+		System.out.println(CloudSimPer.getClock() + "---" + cost);
 		return cost * energy;
 	}
 
