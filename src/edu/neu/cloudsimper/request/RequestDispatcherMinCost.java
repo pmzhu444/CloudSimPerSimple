@@ -21,14 +21,14 @@ public class RequestDispatcherMinCost extends RequestDispatcherAbstract implemen
         } else {
             double totalCost = 0;
             for (int i = 0; i < this.datacenters.size(); i++) {
-                totalCost += 1 / (this.datacenters.get(i).getRePrice() * this.datacenters.get(i).getReDcUsage());
+                totalCost += 1 / this.datacenters.get(i).getRePrice();
 
             }
 
             int totalReuqestNum = requests.size();
 
             for (int i = 0; i < this.datacenters.size(); i++) {
-                int num = (int)(((1 / (this.datacenters.get(i).getRePrice() * this.datacenters.get(i).getReDcUsage())) / totalCost) * totalReuqestNum);
+                int num = (int)(((1 / this.datacenters.get(i).getRePrice()) / totalCost) * totalReuqestNum);
                 for (int j = 0; j < num; j++) {
                     if (!requests.isEmpty()) {
                         int last = requests.size() -1;
