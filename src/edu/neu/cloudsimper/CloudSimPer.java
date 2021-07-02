@@ -19,7 +19,7 @@ public class CloudSimPer {
 
 	private static List<Datacenter> datacenters = new ArrayList<Datacenter>();
 	private static List<Request> requests = new ArrayList<Request>();
-	private static List<LogUnit> logUnits = new ArrayList<LogUnit>(SIM_TIME / TICK);
+	// private static List<LogUnit> logUnits = new ArrayList<LogUnit>(SIM_TIME / TICK);
 
 	public static void main(String[] args) {
 		CloudSimPer.init();
