@@ -2,6 +2,7 @@ package edu.neu.cloudsimper.energy;
 
 import java.util.Random;
 
+import edu.neu.cloudsimper.CloudSimPer;
 import org.apache.commons.math3.distribution.WeibullDistribution;
 
 public class EnergyGeneratorTheoryWind extends EnergyGeneratorAbstract implements EnergyGenerator {
@@ -27,5 +28,9 @@ public class EnergyGeneratorTheoryWind extends EnergyGeneratorAbstract implement
 
 		double windEnergy = 0.5 * AIR_DENSITRY * Math.pow(this.weibull.sample(), 3) * Math.PI * Math.pow(VANE_ENGINE_RADIUS, 2);
 		return windEnergy / 1000;
+	}
+	@Override
+	public double nextnextEnergy(int duration) {
+		return 0;
 	}
 }

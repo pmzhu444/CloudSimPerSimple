@@ -11,6 +11,8 @@ public interface EnergyGenerator {
 	
 	public double nextEnergy(int duration);
 
+	public double nextnextEnergy(int duration);
+
 	public String getName();
 
 	public void setLocation(Location location);

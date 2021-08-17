@@ -47,6 +47,7 @@ public abstract class EnergyGeneratorPeriodic extends EnergyGeneratorAbstract im
 	 * statrPartEnergy:energyStartTime2CycleEnd; loopPartEnergy:energyCycle * loop;
 	 * endPartEnergy:energyCycleStart2EndTime
 	 */
+	/*
 	@Override
 	public double nextEnergy(int duration) {
 
@@ -92,6 +93,17 @@ public abstract class EnergyGeneratorPeriodic extends EnergyGeneratorAbstract im
 		double ratio = new Random().nextDouble() * 0.1 + 0.95;
 		result = (int)(result * ratio);
 		return result;
+	}
+	读取太阳能文件与风能文件的生成方式
+	 */
+
+	@Override
+	public double nextEnergy(int duration) {
+		return energies[CloudSimPer.getClock()/600];
+	}
+	@Override
+	public double nextnextEnergy(int duration) {
+		return energies[(CloudSimPer.getClock() + duration)/600];
 	}
 
 	protected abstract void initEnergy();

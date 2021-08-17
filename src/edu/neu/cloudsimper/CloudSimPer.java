@@ -13,7 +13,7 @@ import edu.neu.cloudsimper.request.Request;
 public class CloudSimPer {
 
 	private static final int TICK = 60 * 10;
-	private static final int SIM_TIME = 3600 * 24 * 7;
+	private static final int SIM_TIME = 3600 * 24;
 
 	private static int clock = 0;
 
@@ -40,6 +40,9 @@ public class CloudSimPer {
 	}
 
 	private static void runTick(int tick) {
+		for (Datacenter datacenter : datacenters) {
+
+		}
 		for (Request request : requests) {
 			request.runDispatch(tick, datacenters);
 		}

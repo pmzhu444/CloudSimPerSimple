@@ -67,6 +67,7 @@ public class Const {
 	public static final String P_MINTIME = "minTime";
 	public static final String P_MAXGREEN = "maxGreen";
 	public static final String P_MINCOST = "minCost";
+	public static final String P_AVEGREEN = "aveGreen";
 
 	public static final int ENERGY_PRICE = 36;
 

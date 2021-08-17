@@ -8,6 +8,7 @@
 		<Attribute name="minTime">edu.neu.cloudsimper.request.RequestDispatcherMinTime</Attribute>
 		<Attribute name="maxGreen">edu.neu.cloudsimper.request.RequestDispatcherMaxGreen</Attribute>
 		<Attribute name="minCost">edu.neu.cloudsimper.request.RequestDispatcherMinCost</Attribute>
+		<Attribute name="aveGreen">edu.neu.cloudsimper.request.RequestDispatcherAveGreen</Attribute>
 	</Plugin>
 	<Plugin name="PowerModel"><!-- For Host -->
 		<Attribute name="default">edu.neu.cloudsimper.power.PowerModelConst</Attribute>
@@ -23,15 +24,16 @@
 	<Plugin name="RequestGenerator"><!-- For Request -->
 		<Attribute name="default">edu.neu.cloudsimper.request.RequestGeneratorPopulationTime</Attribute>
 		<Attribute name="google">edu.neu.cloudsimper.request.RequestGeneratorPopulationTime</Attribute>
+		<Attribute name="calc">edu.neu.cloudsimper.request.RequestGeneratorPopulationTime</Attribute>
 	</Plugin>
 	<Plugin name="EnergyGenerator"><!-- For Energy -->
 		<Attribute name="default">edu.neu.cloudsimper.energy.EnergyGeneratorEmpty</Attribute>
 		<Attribute name="simple">edu.neu.cloudsimper.energy.EnergyGeneratorFileSimple</Attribute>
-		<Attribute name="solarFile_DC_CR">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
+		<Attribute name="solarFile_DC_1">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
 		<Attribute name="windFile_DC_CR">edu.neu.cloudsimper.energy.EnergyGeneratorFileWind</Attribute>
-		<Attribute name="solarFile_DC_MB">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
+		<Attribute name="solarFile_DC_2">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
 		<Attribute name="windFile_DC_MB">edu.neu.cloudsimper.energy.EnergyGeneratorFileWind</Attribute>
-		<Attribute name="solarFile_DC_SH">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
+		<Attribute name="solarFile_DC_3">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
 		<Attribute name="windFile_DC_SH">edu.neu.cloudsimper.energy.EnergyGeneratorFileWind</Attribute>
 		<Attribute name="solarFile_DC_LA">edu.neu.cloudsimper.energy.EnergyGeneratorFileSolar</Attribute>
 		<Attribute name="windFile_DC_LA">edu.neu.cloudsimper.energy.EnergyGeneratorFileWind</Attribute>

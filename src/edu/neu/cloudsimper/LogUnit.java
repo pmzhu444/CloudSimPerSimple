@@ -19,6 +19,8 @@ public class LogUnit {
 	private double reBaUsage;
 	private double rePrice;
 
+	private double nextReSupply;
+
 	private double baSupply;
 	private double baPrice;
 
@@ -144,6 +146,14 @@ public class LogUnit {
 		this.cost = cost;
 	}
 
+	public double getNextReSupply() {
+		return nextReSupply;
+	}
+
+	public void setNextReSupply(double nextReSupply) {
+		this.nextReSupply = nextReSupply;
+	}
+
 	public String toString() {
 
 		this.dcUsage = Math.ceil(dcUsage * 1000) / 1000.0;
@@ -157,6 +167,7 @@ public class LogUnit {
 		this.baSupply = Math.ceil(baSupply * 1000) / 1000.0;
 		this.baPrice = Math.ceil(baPrice * 1000) / 1000.0;
 		this.cost = Math.ceil(cost * 1000) / 1000.0;
+		this.nextReSupply = Math.ceil(nextReSupply* 1000) / 1000.0;
 
 		StringBuffer sb = new StringBuffer();
 		sb.append(this.time).append(split).append(this.dcName).append(split).append(this.requestNum).append(split)
@@ -164,7 +175,8 @@ public class LogUnit {
 				.append(this.dcUsage).append(split).append(this.dcConsume).append(split).append(this.dcPrice).append(split)
 				.append(this.reSupply).append(split).append(this.reUsage).append(split).append(this.reDcUsage)
 				.append(split).append(this.reBaUsage).append(split).append(this.rePrice).append(split)
-				.append(this.baSupply).append(split).append(this.baPrice).append(split).append(this.cost).append(split);
+				.append(this.baSupply).append(split).append(this.baPrice).append(split).append(this.cost).append(split)
+				.append(this.nextReSupply).append(split);
 		return sb.toString();
 	}
 }

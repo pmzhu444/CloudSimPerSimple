@@ -7,19 +7,13 @@
 		<Attribute name="lifecyle">20</Attribute>
 		<Attribute name="price">0.1</Attribute>
 	</Battery>
-	<Battery name="DC_CR">
+	<Battery name="DC_1">
 		<Attribute name="price">0.5</Attribute>
 	</Battery>
-	<Battery name="DC_LA">
+	<Battery name="DC_2">
 		<Attribute name="price">0.5</Attribute>
 	</Battery>
-	<Battery name="DC_MB">
-		<Attribute name="price">0.5</Attribute>
-	</Battery>
-	<Battery name="DC_SH">
-		<Attribute name="price">0.5</Attribute>
-	</Battery>
-	<Battery name="DC_OS">
+	<Battery name="DC_3">
 		<Attribute name="price">0.5</Attribute>
 	</Battery>
 </Batteries>

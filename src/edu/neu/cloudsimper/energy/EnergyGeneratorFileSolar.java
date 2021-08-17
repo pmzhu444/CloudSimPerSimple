@@ -8,7 +8,8 @@ public class EnergyGeneratorFileSolar extends EnergyGeneratorFile implements Ene
 	@Override
 	protected double parseEnergy(String line) {
 		double solarEnergy = 0.0;
-		solarEnergy = SOLAR_CONVERSION_RATE * Double.valueOf(line) * Math.pow(SOLAR_ILLUMINATION_COEFFICIENT, 2);
+		//solarEnergy = SOLAR_CONVERSION_RATE * Double.valueOf(line) * Math.pow(SOLAR_ILLUMINATION_COEFFICIENT, 2);
+		solarEnergy = Double.valueOf(line) * 1000;
 		return solarEnergy;
 	}
 

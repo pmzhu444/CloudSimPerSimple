@@ -21,6 +21,8 @@ public class Energy extends Component implements SimPerEntity {
 	private double current;
 	private double ePrice;
 
+	private double next;
+
 	private Energy(MetaContainer container, int index) {
 		this.name = container.getName() + index;
 		this.generator = PluginFactory.energy(container).createEnergyGenerator();
@@ -43,11 +45,12 @@ public class Energy extends Component implements SimPerEntity {
 
 	@Override
 	public void runTick(int tick, LogUnit unit) {
+		this.next = generator.nextnextEnergy(tick)/1000;
 		this.current = generator.nextEnergy(tick)/1000;
 		this.ePrice = price.calculate(current);
 		unit.setRePrice(ePrice);
 		unit.setReSupply(current);
-
+		unit.setNextReSupply(next);
 	}
 
 	private static class EnergyBuilder {

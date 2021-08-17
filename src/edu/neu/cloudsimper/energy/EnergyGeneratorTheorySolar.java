@@ -52,6 +52,11 @@ public class EnergyGeneratorTheorySolar extends EnergyGeneratorAbstract implemen
 	}
 
 	@Override
+	public double nextnextEnergy(int duration) {
+		return 0;
+	}
+
+	@Override
 	public void start() {
 	
 	}
